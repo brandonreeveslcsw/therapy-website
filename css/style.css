@@ -41,6 +41,18 @@ p{margin-bottom:1rem}
 .nav-links a:hover,.nav-links a.active{color:var(--cta)}
 .nav-cta{font-size:.85rem!important;padding:.55rem 1.25rem;background:var(--cta);color:var(--white)!important;border-radius:4px}
 .nav-cta:hover{background:var(--cta-hover)}
+/* ===== DROPDOWN ===== */
+.nav-dropdown{position:relative}
+.nav-dropdown-toggle{background:none;border:none;font-family:var(--font-body);font-size:.88rem;color:var(--slate);font-weight:500;letter-spacing:.01em;cursor:pointer;display:flex;align-items:center;gap:.35rem;padding:0;transition:color .2s}
+.nav-dropdown-toggle:hover,.nav-dropdown.open .nav-dropdown-toggle{color:var(--cta)}
+.dropdown-arrow{transition:transform .2s}
+.nav-dropdown.open .dropdown-arrow{transform:rotate(180deg)}
+.nav-dropdown-menu{display:none;position:absolute;top:calc(100% + .65rem);left:50%;transform:translateX(-50%);background:var(--white);border:1px solid var(--border);border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.08);list-style:none;min-width:220px;padding:.5rem 0;z-index:110}
+.nav-dropdown.open .nav-dropdown-menu{display:block}
+.nav-dropdown-menu a{display:block;padding:.55rem 1.25rem;font-size:.88rem;color:var(--slate);font-weight:500;white-space:nowrap;transition:background .15s,color .15s}
+.nav-dropdown-menu a:hover,.nav-dropdown-menu a:focus-visible{background:var(--bg-alt);color:var(--cta)}
+.nav-dropdown-menu a.active{color:var(--cta)}
+
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px}
 .hamburger span{display:block;width:24px;height:2px;background:var(--slate);margin:5px 0;transition:all .3s}
 
@@ -140,6 +152,9 @@ p{margin-bottom:1rem}
   .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--white);flex-direction:column;padding:1.5rem;gap:1rem;border-bottom:1px solid var(--border);box-shadow:0 4px 12px rgba(0,0,0,.06)}
   .nav-links.open{display:flex}
   .hamburger{display:block}
+  .nav-dropdown-menu{position:static;transform:none;box-shadow:none;border:none;border-radius:0;padding:0 0 0 1rem;min-width:0;display:none}
+  .nav-dropdown.open .nav-dropdown-menu{display:block}
+  .nav-dropdown-menu a{padding:.4rem 0}
   .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
   .hamburger.open span:nth-child(2){opacity:0}
   .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
