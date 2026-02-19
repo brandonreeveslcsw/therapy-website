@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Alternative: Simple Wordmark Version -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <defs>
+    <linearGradient id="forestGreen3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d4a3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2f28;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- BR Monogram -->
+  <g>
+    <!-- B -->
+    <text x="30" y="135" 
+          font-family="Georgia, 'Times New Roman', serif" 
+          font-size="120" 
+          font-weight="400"
+          fill="url(#forestGreen3)"
+          style="letter-spacing: -10px;">B</text>
+    
+    <!-- R -->
+    <text x="95" y="135" 
+          font-family="Georgia, 'Times New Roman', serif" 
+          font-size="100" 
+          font-weight="400"
+          fill="url(#forestGreen3)"
+          style="letter-spacing: -6px;">R</text>
+  </g>
+  
+  <!-- Vertical separator - spans just past text block -->
+  <line x1="175" y1="55" x2="175" y2="150" stroke="#c9a959" stroke-width="1.5"/>
+  
+  <!-- Full Name - lowered to align with BR -->
+  <text x="200" y="100" 
+        font-family="Georgia, 'Times New Roman', serif" 
+        font-size="42"
+        font-weight="400"
+        fill="#2d4a3e">Brandon Reeves</text>
+  
+  <!-- Credential - tightened to name -->
+  <text x="200" y="135" 
+        font-family="'Helvetica Neue', Arial, sans-serif" 
+        font-size="18"
+        font-weight="300"
+        letter-spacing="6"
+        fill="#2d4a3e">LCSW • BATON ROUGE, LA</text>
+  
+  <!-- Subtle underline -->
+  <path d="M 200 140 L 500 140" stroke="#2d4a3e" stroke-width="0.5" opacity="0.3"/>
+</svg>
