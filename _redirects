@@ -1,0 +1,3 @@
+# Stable scheduling link for printed QR codes. Change only the destination when switching EHRs.
+# Keep status 302 so the scheduling destination remains temporary.
+/schedule https://brandonreeveslcsw.janeapp.com/#staff_member/1 302
