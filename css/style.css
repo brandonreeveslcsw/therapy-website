@@ -77,6 +77,19 @@ p{margin-bottom:1rem}
 .section-header{text-align:center;max-width:680px;margin:0 auto 3rem}
 .section-header p{color:var(--text-light)}
 
+/* ===== QUICK FACTS / ANSWERS ===== */
+.quick-facts{background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:4rem 1.5rem}
+.quick-facts-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:3rem;align-items:start}
+.quick-facts-intro p{color:var(--text-light);max-width:520px}
+.facts-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.fact-item{border:1px solid var(--border);border-radius:6px;padding:1.1rem 1.25rem;background:var(--bg)}
+.fact-item h3{font-family:var(--font-body);font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.35rem}
+.fact-item p{font-size:.95rem;color:var(--text-light);margin-bottom:0}
+.answer-block{background:var(--bg-alt);border:1px solid var(--border);border-radius:6px;padding:1.25rem 1.5rem;margin:1.5rem 0}
+.answer-block h2,.answer-block h3{font-family:var(--font-body);font-size:1rem;font-weight:600;margin:0 0 .5rem;color:var(--blue-dark)}
+.answer-block p{color:var(--text-light);margin-bottom:0}
+@media(max-width:800px){.quick-facts-grid{grid-template-columns:1fr}.facts-list{grid-template-columns:1fr}}
+
 /* ===== SERVICES GRID ===== */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
 .service-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:2rem;transition:box-shadow .25s,transform .25s}
